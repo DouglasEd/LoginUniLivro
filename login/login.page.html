@@ -1,0 +1,31 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+< !--(ngSubmit)="onLogin()"-->
+
+<ion-content [fullscreen]="true">
+  <div class="background">
+    <div class="login-box">
+      <div class="logo">
+        <img src="../../assets/icon/UniLivro.png" alt="Logo">
+      </div>
+      <div class="login-input">
+        <form (ngSubmit)="onLogin()">
+          <ion-item>
+            <ion-label position="floating">Matricula</ion-label>
+            <ion-input name="mat" type="text" [(ngModel)]="matricula" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input name="senha" type="password" [(ngModel)]="senha" required></ion-input>
+          </ion-item>
+          <ion-button expand="full" type="submit" class="EnterB">Entrar</ion-button>
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>
